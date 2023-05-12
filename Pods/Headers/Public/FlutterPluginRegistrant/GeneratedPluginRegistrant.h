@@ -1,0 +1,1 @@
+../../../../quizzler_flutter_3/.ios/Flutter/FlutterPluginRegistrant/Classes/GeneratedPluginRegistrant.h

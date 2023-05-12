@@ -1,36 +1,35 @@
 //
 //  AppDelegate.swift
-//  Add-to-app-3
+//  Add-to-app-2
 //
-//  Created by OLX on 11/05/23.
+//  Created by OLX on 09/05/23.
 //
 
 import UIKit
+import Flutter
+import FlutterPluginRegistrant
 
 @main
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: FlutterAppDelegate {
 
+    lazy var flutterEngine = FlutterEngine(name: "add to app Flutter")
+    lazy var flutterEngine2 = FlutterEngine(name: "secondary")
 
+    override func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        flutterEngine.run();
+        GeneratedPluginRegistrant.register(with: self.flutterEngine);
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        return true
-    }
+        flutterEngine2.run(withEntrypoint: "secondary")
+        GeneratedPluginRegistrant.register(with: self.flutterEngine2);
 
-    // MARK: UISceneSession Lifecycle
-
-    func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
-        // Called when a new scene session is being created.
-        // Use this method to select a configuration to create the new scene with.
-        return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
-    }
-
-    func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
-        // Called when the user discards a scene session.
-        // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
-        // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
+        return super.application(application, didFinishLaunchingWithOptions: launchOptions);
     }
 
 
 }
 
+//@main
+//class AppDelegate: UIResponder, UIApplicationDelegate {
+//    let engines = FlutterEngineGroup(name: "multiple-flutters", project: nil)
+//}

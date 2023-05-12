@@ -16,6 +16,8 @@
 		33B09F9F2A0D1DF300B8ED1A /* Add_to_app_3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B09F9E2A0D1DF300B8ED1A /* Add_to_app_3Tests.swift */; };
 		33B09FA92A0D1DF300B8ED1A /* Add_to_app_3UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B09FA82A0D1DF300B8ED1A /* Add_to_app_3UITests.swift */; };
 		33B09FAB2A0D1DF300B8ED1A /* Add_to_app_3UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B09FAA2A0D1DF300B8ED1A /* Add_to_app_3UITestsLaunchTests.swift */; };
+		33B09FB82A0D1EF500B8ED1A /* SingleFlutterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B09FB72A0D1EF500B8ED1A /* SingleFlutterViewController.swift */; };
+		744B92BE88F73423EEFDAE68 /* libPods-Add-to-app-3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 67D55430C1E768B2D6C54C0A /* libPods-Add-to-app-3.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,10 @@
 		33B09FA42A0D1DF300B8ED1A /* Add-to-app-3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Add-to-app-3UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		33B09FA82A0D1DF300B8ED1A /* Add_to_app_3UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Add_to_app_3UITests.swift; sourceTree = "<group>"; };
 		33B09FAA2A0D1DF300B8ED1A /* Add_to_app_3UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Add_to_app_3UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		33B09FB72A0D1EF500B8ED1A /* SingleFlutterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleFlutterViewController.swift; sourceTree = "<group>"; };
+		67D55430C1E768B2D6C54C0A /* libPods-Add-to-app-3.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Add-to-app-3.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B027AC4266E531910511FABD /* Pods-Add-to-app-3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Add-to-app-3.release.xcconfig"; path = "Target Support Files/Pods-Add-to-app-3/Pods-Add-to-app-3.release.xcconfig"; sourceTree = "<group>"; };
+		D132D14C4F279E816FA825CD /* Pods-Add-to-app-3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Add-to-app-3.debug.xcconfig"; path = "Target Support Files/Pods-Add-to-app-3/Pods-Add-to-app-3.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				744B92BE88F73423EEFDAE68 /* libPods-Add-to-app-3.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +90,8 @@
 				33B09F9D2A0D1DF300B8ED1A /* Add-to-app-3Tests */,
 				33B09FA72A0D1DF300B8ED1A /* Add-to-app-3UITests */,
 				33B09F852A0D1DF100B8ED1A /* Products */,
+				DCFAE069A5076946B0BA15E6 /* Pods */,
+				DF3975356B954A47B9FECBF2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +115,7 @@
 				33B09F902A0D1DF200B8ED1A /* Assets.xcassets */,
 				33B09F922A0D1DF200B8ED1A /* LaunchScreen.storyboard */,
 				33B09F952A0D1DF200B8ED1A /* Info.plist */,
+				33B09FB72A0D1EF500B8ED1A /* SingleFlutterViewController.swift */,
 			);
 			path = "Add-to-app-3";
 			sourceTree = "<group>";
@@ -127,6 +137,23 @@
 			path = "Add-to-app-3UITests";
 			sourceTree = "<group>";
 		};
+		DCFAE069A5076946B0BA15E6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D132D14C4F279E816FA825CD /* Pods-Add-to-app-3.debug.xcconfig */,
+				B027AC4266E531910511FABD /* Pods-Add-to-app-3.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DF3975356B954A47B9FECBF2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				67D55430C1E768B2D6C54C0A /* libPods-Add-to-app-3.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +161,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 33B09FAE2A0D1DF300B8ED1A /* Build configuration list for PBXNativeTarget "Add-to-app-3" */;
 			buildPhases = (
+				191EA8583C7CF568AF87F15C /* [CP] Check Pods Manifest.lock */,
+				E8233285C5F74E4FD7DBA9D0 /* [CP-User] Run Flutter Build quizzler_flutter_3 Script */,
 				33B09F802A0D1DF100B8ED1A /* Sources */,
 				33B09F812A0D1DF100B8ED1A /* Frameworks */,
 				33B09F822A0D1DF100B8ED1A /* Resources */,
+				18D1A1D592B8C2E8CA050B68 /* [CP-User] Embed Flutter Build quizzler_flutter_3 Script */,
 			);
 			buildRules = (
 			);
@@ -253,12 +283,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		18D1A1D592B8C2E8CA050B68 /* [CP-User] Embed Flutter Build quizzler_flutter_3 Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "[CP-User] Embed Flutter Build quizzler_flutter_3 Script";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/quizzler_flutter_3/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh embed_and_thin";
+		};
+		191EA8583C7CF568AF87F15C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Add-to-app-3-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8233285C5F74E4FD7DBA9D0 /* [CP-User] Run Flutter Build quizzler_flutter_3 Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "[CP-User] Run Flutter Build quizzler_flutter_3 Script";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/quizzler_flutter_3/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		33B09F802A0D1DF100B8ED1A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				33B09F8C2A0D1DF100B8ED1A /* ViewController.swift in Sources */,
+				33B09FB82A0D1EF500B8ED1A /* SingleFlutterViewController.swift in Sources */,
 				33B09F882A0D1DF100B8ED1A /* AppDelegate.swift in Sources */,
 				33B09F8A2A0D1DF100B8ED1A /* SceneDelegate.swift in Sources */,
 			);
@@ -432,6 +508,7 @@
 		};
 		33B09FAF2A0D1DF300B8ED1A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D132D14C4F279E816FA825CD /* Pods-Add-to-app-3.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -460,6 +537,7 @@
 		};
 		33B09FB02A0D1DF300B8ED1A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B027AC4266E531910511FABD /* Pods-Add-to-app-3.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
